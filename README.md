@@ -3,7 +3,7 @@ SMall3Bit Instruction Set
 
 ## Files
 - sm3b.c
-  - A code golf style 533 character implementation of SM3B in C
+  - A code golf style 528 character implementation of SM3B in C
   - Details:
     - Build it using any C compiler (Should work on any compiler since 1973)
     - Values are stored as integers
@@ -13,7 +13,7 @@ SMall3Bit Instruction Set
 - rsm3b.c
   - Really small sm3b.c
   - Unnessesary whitespace and comments removed
-  - 442 characters
+  - 437 characters
 
 ## Registers
 | Register | Description                                  |
