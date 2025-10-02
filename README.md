@@ -14,6 +14,12 @@ SMall3Bit Instruction Set
   - Really small sm3b.c
   - Unnessesary whitespace and comments removed
   - 437 characters
+- sm3b.js
+  - A visual implementation of SM3B in Javascript
+  - Has animations
+  - 65536 integers of memory
+- sm3b.html
+  - HTML for sm3b.js
 
 ## Registers
 | Register | Description                                  |
