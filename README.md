@@ -22,9 +22,7 @@ SMall3Bit Instruction Set
 | Y        | The general purpose register                 |
 | A        | The address register                         |
 | I        | The instruction address register             |
-| V        | The accumulator value                        |
-| F        | The number reset flag                        |
-| J        | The jump flag (Prevents I from incrementing) |
+| C        | The accumulator value                        |
 
 
 ## Instructions
