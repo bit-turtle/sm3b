@@ -20,6 +20,29 @@ SMall3Bit Instruction Set
   - 65536 integers of memory
 - sm3b.html
   - HTML for sm3b.js
+- SM3B.8xp
+  - TI-Basic implementation of SM3B
+  - List 0 is the memory (Can be resized)
+  - List 1 is the program, or instructions can be typed manually
+  - Codes
+    - 0: 0
+    - 1: 1
+    - +: 2
+    - -: 3
+    - $: 4
+    - @: 5
+    - #: 7
+    - ?: 6
+  - Special Codes
+    - 10: Run program from list 1
+    - 20: Don't print register state
+    - 30: Map memory address 0 to user input
+- tism3b.txt
+  - Plain text version of SM3B.8xp
+- sm3b.py
+  - Python implementation of SM3B
+  - Pass program as the first argument
+  - Written with the font set to Aurebesh
 
 ## Registers
 | Register | Description                                  |

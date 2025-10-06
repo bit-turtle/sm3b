@@ -1,0 +1,116 @@
+﻿0→V
+0→F
+0→D
+0→C
+0→X
+0→Y
+0→A
+0→S
+0→L
+Lbl I
+If V=1
+Then
+Goto G
+End
+Disp "[SM3B] REGISTERS: X,Y,A,S:",X,Y,A,S
+Disp "MEMORY: L₁",L₁
+Disp "INST: (0,1,+,-,Y,S,?,M)",C
+Lbl G
+If D=1
+Then
+L₂(C+1)→E
+If V≠1
+Then
+Wait 1
+End
+Else
+­1→E
+While E<0 or E>7 and not(E=10 or E=20 or E=30)
+Prompt E
+End
+End
+Lbl R
+If E=10
+Then
+1→D
+0→C
+End
+If E=20
+Then
+1→V
+End
+If E=30
+Then
+1→L
+End
+If E=0 or E=1
+Then
+If F=0
+Then
+0→X
+1→F
+End
+Else
+0→F
+End
+If E=0
+Then
+X*2→X
+C+1→C
+End
+If E=1
+Then
+X*2+1→X
+C+1→C
+End
+If E=2
+Then
+A+X→A
+A→X
+C+1→C
+End
+If E=3
+Then
+A-X→A
+A→X
+C+1→C
+End
+If E=4
+Then
+X→W
+Y→X
+W→Y
+C+1→C
+End
+If E=5
+Then
+X→W
+S→X
+W→S
+C+1→C
+End
+If E=6
+Then
+If X≠0
+Then
+S→W
+C→S
+W→C
+Else
+C+1→C
+End
+End
+If E=7
+Then
+If X≠0 or L=0
+Then
+X→W
+L₁(S+1)→X
+W→L₁(S+1)
+Else
+Disp X
+Prompt X
+End
+C+1→C
+End
+Goto I
