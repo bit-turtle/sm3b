@@ -37,7 +37,7 @@ SMall3Bit Instruction Set
     - 10: Run program from list 1
     - 20: Don't print register state
     - 30: Map memory address 0 to user input
-- tism3b.txt
+- SM3B.8xp.txt
   - Plain text version of SM3B.8xp
 - sm3b.py
   - Python implementation of SM3B
